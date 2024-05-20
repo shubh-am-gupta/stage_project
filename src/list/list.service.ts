@@ -11,7 +11,7 @@ export class ListService {
     ) {}
 
     async listItems(userId: number, pageNumber: number) {
-        const pageSize = 3; // assuming pagesize to be 10 for now
+        const pageSize = 5; // assuming pagesize to be 10 for now
         const userData = await this.listRepository.find({
             where: {
                 userId: userId,
